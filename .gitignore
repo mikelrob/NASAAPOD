@@ -1,0 +1,60 @@
+Preview.html
+.DS_Store
+upload_dsym_results
+MyPizza.app.dSYM.zip
+MyPizza.ipa
+.*.sw*
+*~
+Derived/
+DerivedData/
+*xcodeproj/*mode*
+*xcodeproj/*pbxuser
+*xcodeproj/*per*
+*xcodeproj/project.xcworkspace
+*xcodeproj/xcuserdata
+*tmproj
+.DS_Store
+profile
+*.pbxuser
+*.mode1v3
+External/GHUnit/*
+.svn
+
+pkg
+build.output
+.build
+
+*.xcuserstate
+WorkspaceSettings.xcsettings
+Breakpoints.xcbkptlist
+Pods/Pods.xcodeproj/xcuserdata
+*.xcworkspace/*
+
+Carthage/Build/*
+!Carthage/Build/iOS
+
+*.bcsymbolmap
+
+# Ignore bundler config.
+/.bundle
+/.gems
+
+# Appcode / Jetbrains
+.idea
+
+# Fastlane
+fastlane/test_output
+fastlane/report.xml
+fastlane/appstore_dsyms/
+
+swiftlint.result.html
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Swift Packages
+*/.swiftpm
+
+build/
+cobertura.xml
