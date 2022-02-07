@@ -1,8 +1,5 @@
 Preview.html
 .DS_Store
-upload_dsym_results
-MyPizza.app.dSYM.zip
-MyPizza.ipa
 .*.sw*
 *~
 Derived/
@@ -28,7 +25,6 @@ build.output
 WorkspaceSettings.xcsettings
 Breakpoints.xcbkptlist
 Pods/Pods.xcodeproj/xcuserdata
-*.xcworkspace/*
 
 Carthage/Build/*
 !Carthage/Build/iOS
