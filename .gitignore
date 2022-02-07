@@ -10,18 +10,18 @@ DerivedData/
 *xcodeproj/project.xcworkspace
 *xcodeproj/xcuserdata
 *tmproj
-.DS_Store
 profile
 *.pbxuser
 *.mode1v3
 External/GHUnit/*
 .svn
-
+*/xcuserdata
 pkg
 build.output
 .build
 
 *.xcuserstate
+*.xcuserdatad
 WorkspaceSettings.xcsettings
 Breakpoints.xcbkptlist
 Pods/Pods.xcodeproj/xcuserdata
