@@ -11,12 +11,45 @@
 		3E10196B27AC59D10056E2BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10196A27AC59D10056E2BA /* ContentView.swift */; };
 		3E10196D27AC59D20056E2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E10196C27AC59D20056E2BA /* Assets.xcassets */; };
 		3E10197027AC59D20056E2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E10196F27AC59D20056E2BA /* Preview Assets.xcassets */; };
+		3E19878C27B2B2DB00A26469 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E19878B27B2B2DB00A26469 /* WidgetKit.framework */; };
+		3E19878E27B2B2DB00A26469 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E19878D27B2B2DB00A26469 /* SwiftUI.framework */; };
+		3E19879127B2B2DB00A26469 /* APODWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E19879027B2B2DB00A26469 /* APODWidget.swift */; };
+		3E19879427B2B2DC00A26469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E19879327B2B2DC00A26469 /* Assets.xcassets */; };
+		3E19879627B2B2DC00A26469 /* APODWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3E19879227B2B2DB00A26469 /* APODWidget.intentdefinition */; };
+		3E19879727B2B2DC00A26469 /* APODWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3E19879227B2B2DB00A26469 /* APODWidget.intentdefinition */; };
+		3E19879A27B2B2DC00A26469 /* APODWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3E19878A27B2B2DB00A26469 /* APODWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3E1987A027B2B33E00A26469 /* APODKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E19879F27B2B33E00A26469 /* APODKit */; };
 		3E241BBD27AD42AF0088E1C3 /* APODKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E241BBC27AD42AF0088E1C3 /* APODKit */; };
+		3E30564627B3BC0500FDCD83 /* APODWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E30564527B3BC0500FDCD83 /* APODWidgetProvider.swift */; };
 		3E53871D27B0496F00CF3907 /* APODInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53871C27B0496F00CF3907 /* APODInfoView.swift */; };
 		3E53872027B049D600CF3907 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53871F27B049D600CF3907 /* APODModel.swift */; };
 		3EEDD49E27B04F2B005BFACF /* APODAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDD49D27B04F2B005BFACF /* APODAssetView.swift */; };
 		3EEDD4A327B07C14005BFACF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDD4A227B07C14005BFACF /* WebView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E19879827B2B2DC00A26469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E10195D27AC59D10056E2BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E19878927B2B2DB00A26469;
+			remoteInfo = APODWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E19879B27B2B2DC00A26469 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E19879A27B2B2DC00A26469 /* APODWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3E10196527AC59D10056E2BA /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,7 +57,15 @@
 		3E10196A27AC59D10056E2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E10196C27AC59D20056E2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E10196F27AC59D20056E2BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E19878A27B2B2DB00A26469 /* APODWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = APODWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E19878B27B2B2DB00A26469 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3E19878D27B2B2DB00A26469 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3E19879027B2B2DB00A26469 /* APODWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODWidget.swift; sourceTree = "<group>"; };
+		3E19879227B2B2DB00A26469 /* APODWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = APODWidget.intentdefinition; sourceTree = "<group>"; };
+		3E19879327B2B2DC00A26469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E19879527B2B2DC00A26469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E241BBE27ADFD810088E1C3 /* APOD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APOD.entitlements; sourceTree = "<group>"; };
+		3E30564527B3BC0500FDCD83 /* APODWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODWidgetProvider.swift; sourceTree = "<group>"; };
 		3E53871C27B0496F00CF3907 /* APODInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODInfoView.swift; sourceTree = "<group>"; };
 		3E53871F27B049D600CF3907 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
 		3EEDD49D27B04F2B005BFACF /* APODAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODAssetView.swift; sourceTree = "<group>"; };
@@ -40,6 +81,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E19878727B2B2DB00A26469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1987A027B2B33E00A26469 /* APODKit in Frameworks */,
+				3E19878E27B2B2DB00A26469 /* SwiftUI.framework in Frameworks */,
+				3E19878C27B2B2DB00A26469 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3E10196727AC59D10056E2BA /* APOD */,
+				3E19878F27B2B2DB00A26469 /* APODWidget */,
 				3E10196627AC59D10056E2BA /* Products */,
 				3E241BBB27AD42AF0088E1C3 /* Frameworks */,
 			);
@@ -56,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3E10196527AC59D10056E2BA /* APOD.app */,
+				3E19878A27B2B2DB00A26469 /* APODWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +134,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3E19878F27B2B2DB00A26469 /* APODWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3E19879027B2B2DB00A26469 /* APODWidget.swift */,
+				3E30564527B3BC0500FDCD83 /* APODWidgetProvider.swift */,
+				3E19879227B2B2DB00A26469 /* APODWidget.intentdefinition */,
+				3E19879327B2B2DC00A26469 /* Assets.xcassets */,
+				3E19879527B2B2DC00A26469 /* Info.plist */,
+			);
+			path = APODWidget;
+			sourceTree = "<group>";
+		};
 		3E241BBB27AD42AF0088E1C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E19878B27B2B2DB00A26469 /* WidgetKit.framework */,
+				3E19878D27B2B2DB00A26469 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,10 +184,12 @@
 				3E10196127AC59D10056E2BA /* Sources */,
 				3E10196227AC59D10056E2BA /* Frameworks */,
 				3E10196327AC59D10056E2BA /* Resources */,
+				3E19879B27B2B2DC00A26469 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3E19879927B2B2DC00A26469 /* PBXTargetDependency */,
 			);
 			name = APOD;
 			packageProductDependencies = (
@@ -129,6 +198,26 @@
 			productName = APOD;
 			productReference = 3E10196527AC59D10056E2BA /* APOD.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3E19878927B2B2DB00A26469 /* APODWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E19879E27B2B2DC00A26469 /* Build configuration list for PBXNativeTarget "APODWidgetExtension" */;
+			buildPhases = (
+				3E19878627B2B2DB00A26469 /* Sources */,
+				3E19878727B2B2DB00A26469 /* Frameworks */,
+				3E19878827B2B2DB00A26469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APODWidgetExtension;
+			packageProductDependencies = (
+				3E19879F27B2B33E00A26469 /* APODKit */,
+			);
+			productName = APODWidgetExtension;
+			productReference = 3E19878A27B2B2DB00A26469 /* APODWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -141,6 +230,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					3E10196427AC59D10056E2BA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3E19878927B2B2DB00A26469 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -161,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				3E10196427AC59D10056E2BA /* APOD */,
+				3E19878927B2B2DB00A26469 /* APODWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -175,6 +268,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E19878827B2B2DB00A26469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E19879427B2B2DC00A26469 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -182,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E19879727B2B2DC00A26469 /* APODWidget.intentdefinition in Sources */,
 				3E53871D27B0496F00CF3907 /* APODInfoView.swift in Sources */,
 				3EEDD49E27B04F2B005BFACF /* APODAssetView.swift in Sources */,
 				3E53872027B049D600CF3907 /* APODModel.swift in Sources */,
@@ -191,7 +293,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E19878627B2B2DB00A26469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E19879627B2B2DC00A26469 /* APODWidget.intentdefinition in Sources */,
+				3E19879127B2B2DB00A26469 /* APODWidget.swift in Sources */,
+				3E30564627B3BC0500FDCD83 /* APODWidgetProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E19879927B2B2DC00A26469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E19878927B2B2DB00A26469 /* APODWidgetExtension */;
+			targetProxy = 3E19879827B2B2DC00A26469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3E10197127AC59D20056E2BA /* Debug */ = {
@@ -313,6 +433,7 @@
 		3E10197427AC59D20056E2BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = APOD/APOD.entitlements;
@@ -344,6 +465,7 @@
 		3E10197527AC59D20056E2BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = APOD/APOD.entitlements;
@@ -372,6 +494,60 @@
 			};
 			name = Release;
 		};
+		3E19879C27B2B2DC00A26469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H942H22VLH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APODWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = APODWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mikerobinson.dev.APOD.APODWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E19879D27B2B2DC00A26469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H942H22VLH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APODWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = APODWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mikerobinson.dev.APOD.APODWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,9 +569,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3E19879E27B2B2DC00A26469 /* Build configuration list for PBXNativeTarget "APODWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E19879C27B2B2DC00A26469 /* Debug */,
+				3E19879D27B2B2DC00A26469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3E19879F27B2B33E00A26469 /* APODKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APODKit;
+		};
 		3E241BBC27AD42AF0088E1C3 /* APODKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APODKit;

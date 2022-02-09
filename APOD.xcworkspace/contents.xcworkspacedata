@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:APOD/APOD.xcodeproj">
+      location = "container:APOD/APOD.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:APODKit">

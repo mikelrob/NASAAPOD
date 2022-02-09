@@ -14,7 +14,7 @@ struct APODAssetView: View {
     var body: some View {
         switch asset {
         case let .image(cgImage):
-            Image(decorative: cgImage, scale: 1)
+            Image(decorative: cgImage, scale: UIScreen.main.scale)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         case let .video(url):
