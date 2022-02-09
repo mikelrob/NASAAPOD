@@ -5,6 +5,6 @@
       location = "group:APOD/APOD.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/mikelrob/Developer/spikes/NASA/APODKit">
+      location = "group:APODKit">
    </FileRef>
 </Workspace>
