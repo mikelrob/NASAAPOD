@@ -1,4 +1,5 @@
 import Foundation
+import LoggingKit
 
 public protocol CacheType {
     func load(date: Date) async throws -> APODItem?
@@ -24,13 +25,14 @@ public class Cache: CacheType {
     public init(fileManager: FileManagerType = FileManager(), urlSession: URLSessionType = URLSession.shared) {
         self.fileManager = fileManager
         self.urlSession = urlSession
-        assetsDirectoryURL = fileManager.applicationSupportDirectoryURL
+        assetsDirectoryURL = fileManager.sharedContainerURL
             .appendingPathComponent("APOD")
             .appendingPathComponent("assets")
 
         try? fileManager.createDirectory(at: assetsDirectoryURL, withIntermediateDirectories: true, attributes: nil)
         _ = fileManager.changeCurrentDirectoryPath(assetsDirectoryURL.path)
         assetsItineraryFilePathURL = assetsDirectoryURL.appendingPathComponent("assets.plist")
+        Log.debug("Assets Directory: \(assetsDirectoryURL.absoluteString)")
     }
 
     public func load(date: Date) async throws -> APODItem? {
@@ -107,7 +109,7 @@ public class Cache: CacheType {
             try fileManager.createDirectory(at: assetsDirectoryURL, withIntermediateDirectories: true, attributes: nil)
             _ = fileManager.changeCurrentDirectoryPath(assetsDirectoryURL.path)
         } catch {
-            print(error)
+            Log.error(error)
         }
     }
 
@@ -122,8 +124,9 @@ public class Cache: CacheType {
             storage = try decoder.decode(Storage.self, from: data)
             return storage
         } catch {
-            let message = "Exception thrown while decoding APODItem from plist file \(assetsItineraryFilePathURL) - \(error)"
-            print(message)
+            let message = "Exception thrown while decoding APODItem from plist file \(assetsItineraryFilePathURL)"
+            let log = LogEntry(message: message, error: error)
+            Log.error(log)
             resetAssetsDirectoryContents()
             return [:]
         }
@@ -137,8 +140,9 @@ public class Cache: CacheType {
             let data = try encoder.encode(storage)
             try data.write(to: assetsItineraryFilePathURL)
         } catch {
-            let message = "Exception thrown while encoding APODItem to plist file \(assetsItineraryFilePathURL) - \(error)"
-            print(message)
+            let message = "Exception thrown while encoding APODItem to plist file \(assetsItineraryFilePathURL)"
+            let log = LogEntry(message: message, error: error)
+            Log.error(log)
         }
     }
 }

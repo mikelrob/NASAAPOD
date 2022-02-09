@@ -7,47 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E05C64A27B3ED6F00623058 /* LoggingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E05C64927B3ED6F00623058 /* LoggingKit */; };
+		3E05C64C27B3ED7D00623058 /* LoggingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E05C64B27B3ED7D00623058 /* LoggingKit */; };
+		3E0EF35C27B3DA47003648A6 /* APODClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EF35B27B3DA47003648A6 /* APODClipApp.swift */; };
+		3E0EF36027B3DA48003648A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EF35F27B3DA48003648A6 /* Assets.xcassets */; };
+		3E0EF36327B3DA48003648A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EF36227B3DA48003648A6 /* Preview Assets.xcassets */; };
+		3E0EF36827B3DA48003648A6 /* APODClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3E0EF35927B3DA47003648A6 /* APODClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3E10196927AC59D10056E2BA /* APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10196827AC59D10056E2BA /* APODApp.swift */; };
-		3E10196B27AC59D10056E2BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10196A27AC59D10056E2BA /* ContentView.swift */; };
 		3E10196D27AC59D20056E2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E10196C27AC59D20056E2BA /* Assets.xcassets */; };
 		3E10197027AC59D20056E2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E10196F27AC59D20056E2BA /* Preview Assets.xcassets */; };
 		3E241BBD27AD42AF0088E1C3 /* APODKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E241BBC27AD42AF0088E1C3 /* APODKit */; };
-		3E53871D27B0496F00CF3907 /* APODInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53871C27B0496F00CF3907 /* APODInfoView.swift */; };
-		3E53872027B049D600CF3907 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E53871F27B049D600CF3907 /* APODModel.swift */; };
-		3EEDD49E27B04F2B005BFACF /* APODAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDD49D27B04F2B005BFACF /* APODAssetView.swift */; };
-		3EEDD4A327B07C14005BFACF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDD4A227B07C14005BFACF /* WebView.swift */; };
+		3E2F51EC27B40389001263F5 /* APODAppClip in Frameworks */ = {isa = PBXBuildFile; productRef = 3E2F51EB27B40389001263F5 /* APODAppClip */; };
+		3E3B7A2027B3FEDC00D6C842 /* APODAppClip in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3B7A1F27B3FEDC00D6C842 /* APODAppClip */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E0EF36627B3DA48003648A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E10195D27AC59D10056E2BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E0EF35827B3DA47003648A6;
+			remoteInfo = APODClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E0EF36C27B3DA48003648A6 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				3E0EF36827B3DA48003648A6 /* APODClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3E0EF35427B3D17B003648A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E0EF35927B3DA47003648A6 /* APODClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APODClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0EF35B27B3DA47003648A6 /* APODClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODClipApp.swift; sourceTree = "<group>"; };
+		3E0EF35F27B3DA48003648A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E0EF36227B3DA48003648A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E0EF36427B3DA48003648A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E0EF36527B3DA48003648A6 /* APODClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APODClip.entitlements; sourceTree = "<group>"; };
 		3E10196527AC59D10056E2BA /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E10196827AC59D10056E2BA /* APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODApp.swift; sourceTree = "<group>"; };
-		3E10196A27AC59D10056E2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E10196C27AC59D20056E2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E10196F27AC59D20056E2BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E241BBE27ADFD810088E1C3 /* APOD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APOD.entitlements; sourceTree = "<group>"; };
-		3E53871C27B0496F00CF3907 /* APODInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODInfoView.swift; sourceTree = "<group>"; };
-		3E53871F27B049D600CF3907 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
-		3EEDD49D27B04F2B005BFACF /* APODAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODAssetView.swift; sourceTree = "<group>"; };
-		3EEDD4A227B07C14005BFACF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3E0EF35627B3DA47003648A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3B7A2027B3FEDC00D6C842 /* APODAppClip in Frameworks */,
+				3E05C64C27B3ED7D00623058 /* LoggingKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E10196227AC59D10056E2BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E241BBD27AD42AF0088E1C3 /* APODKit in Frameworks */,
+				3E2F51EC27B40389001263F5 /* APODAppClip in Frameworks */,
+				3E05C64A27B3ED6F00623058 /* LoggingKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E0EF35A27B3DA47003648A6 /* APODClip */ = {
+			isa = PBXGroup;
+			children = (
+				3E0EF35B27B3DA47003648A6 /* APODClipApp.swift */,
+				3E0EF37A27B3DD07003648A6 /* View */,
+				3E0EF37327B3DC6C003648A6 /* Model */,
+				3E0EF35F27B3DA48003648A6 /* Assets.xcassets */,
+				3E0EF36427B3DA48003648A6 /* Info.plist */,
+				3E0EF36527B3DA48003648A6 /* APODClip.entitlements */,
+				3E0EF36127B3DA48003648A6 /* Preview Content */,
+			);
+			path = APODClip;
+			sourceTree = "<group>";
+		};
+		3E0EF36127B3DA48003648A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E0EF36227B3DA48003648A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E0EF37327B3DC6C003648A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E0EF37A27B3DD07003648A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3E10195C27AC59D10056E2BA = {
 			isa = PBXGroup;
 			children = (
 				3E10196727AC59D10056E2BA /* APOD */,
+				3E0EF35A27B3DA47003648A6 /* APODClip */,
 				3E10196627AC59D10056E2BA /* Products */,
 				3E241BBB27AD42AF0088E1C3 /* Frameworks */,
 			);
@@ -57,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3E10196527AC59D10056E2BA /* APOD.app */,
+				3E0EF35927B3DA47003648A6 /* APODClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,8 +144,6 @@
 				3E0EF35427B3D17B003648A6 /* Info.plist */,
 				3E241BBE27ADFD810088E1C3 /* APOD.entitlements */,
 				3E10196827AC59D10056E2BA /* APODApp.swift */,
-				3E53871E27B049B200CF3907 /* Model */,
-				3E53871B27B0494500CF3907 /* View */,
 				3E10196C27AC59D20056E2BA /* Assets.xcassets */,
 				3E10196E27AC59D20056E2BA /* Preview Content */,
 			);
@@ -90,28 +165,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3E53871B27B0494500CF3907 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3E10196A27AC59D10056E2BA /* ContentView.swift */,
-				3E53871C27B0496F00CF3907 /* APODInfoView.swift */,
-				3EEDD49D27B04F2B005BFACF /* APODAssetView.swift */,
-				3EEDD4A227B07C14005BFACF /* WebView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3E53871E27B049B200CF3907 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3E53871F27B049D600CF3907 /* APODModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3E0EF35827B3DA47003648A6 /* APODClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E0EF36927B3DA48003648A6 /* Build configuration list for PBXNativeTarget "APODClip" */;
+			buildPhases = (
+				3E0EF35527B3DA47003648A6 /* Sources */,
+				3E0EF35627B3DA47003648A6 /* Frameworks */,
+				3E0EF35727B3DA47003648A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APODClip;
+			packageProductDependencies = (
+				3E05C64B27B3ED7D00623058 /* LoggingKit */,
+				3E3B7A1F27B3FEDC00D6C842 /* APODAppClip */,
+			);
+			productName = APODClip;
+			productReference = 3E0EF35927B3DA47003648A6 /* APODClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		3E10196427AC59D10056E2BA /* APOD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E10197327AC59D20056E2BA /* Build configuration list for PBXNativeTarget "APOD" */;
@@ -119,14 +196,18 @@
 				3E10196127AC59D10056E2BA /* Sources */,
 				3E10196227AC59D10056E2BA /* Frameworks */,
 				3E10196327AC59D10056E2BA /* Resources */,
+				3E0EF36C27B3DA48003648A6 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3E0EF36727B3DA48003648A6 /* PBXTargetDependency */,
 			);
 			name = APOD;
 			packageProductDependencies = (
 				3E241BBC27AD42AF0088E1C3 /* APODKit */,
+				3E05C64927B3ED6F00623058 /* LoggingKit */,
+				3E2F51EB27B40389001263F5 /* APODAppClip */,
 			);
 			productName = APOD;
 			productReference = 3E10196527AC59D10056E2BA /* APOD.app */;
@@ -142,6 +223,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					3E0EF35827B3DA47003648A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					3E10196427AC59D10056E2BA = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -157,17 +241,28 @@
 			);
 			mainGroup = 3E10195C27AC59D10056E2BA;
 			packageReferences = (
+				3E05C64827B3ED6F00623058 /* XCRemoteSwiftPackageReference "logging" */,
 			);
 			productRefGroup = 3E10196627AC59D10056E2BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3E10196427AC59D10056E2BA /* APOD */,
+				3E0EF35827B3DA47003648A6 /* APODClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3E0EF35727B3DA47003648A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0EF36327B3DA48003648A6 /* Preview Assets.xcassets in Resources */,
+				3E0EF36027B3DA48003648A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E10196327AC59D10056E2BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,22 +275,97 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3E0EF35527B3DA47003648A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0EF35C27B3DA47003648A6 /* APODClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E10196127AC59D10056E2BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E53871D27B0496F00CF3907 /* APODInfoView.swift in Sources */,
-				3EEDD49E27B04F2B005BFACF /* APODAssetView.swift in Sources */,
-				3E53872027B049D600CF3907 /* APODModel.swift in Sources */,
-				3EEDD4A327B07C14005BFACF /* WebView.swift in Sources */,
-				3E10196B27AC59D10056E2BA /* ContentView.swift in Sources */,
 				3E10196927AC59D10056E2BA /* APODApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3E0EF36727B3DA48003648A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E0EF35827B3DA47003648A6 /* APODClip */;
+			targetProxy = 3E0EF36627B3DA48003648A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3E0EF36A27B3DA48003648A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APODClip/APODClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"APODClip/Preview Content\"";
+				DEVELOPMENT_TEAM = H942H22VLH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APODClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = APOD;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mikerobinson.dev.APOD.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E0EF36B27B3DA48003648A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APODClip/APODClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"APODClip/Preview Content\"";
+				DEVELOPMENT_TEAM = H942H22VLH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APODClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = APOD;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mikerobinson.dev.APOD.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3E10197127AC59D20056E2BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -247,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -302,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -315,6 +485,7 @@
 		3E10197427AC59D20056E2BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = APOD/APOD.entitlements;
@@ -330,7 +501,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +517,7 @@
 		3E10197527AC59D20056E2BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = APOD/APOD.entitlements;
@@ -362,7 +533,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +549,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E0EF36927B3DA48003648A6 /* Build configuration list for PBXNativeTarget "APODClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0EF36A27B3DA48003648A6 /* Debug */,
+				3E0EF36B27B3DA48003648A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3E10196027AC59D10056E2BA /* Build configuration list for PBXProject "APOD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -399,10 +578,39 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3E05C64827B3ED6F00623058 /* XCRemoteSwiftPackageReference "logging" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mikelrob/logging.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3E05C64927B3ED6F00623058 /* LoggingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E05C64827B3ED6F00623058 /* XCRemoteSwiftPackageReference "logging" */;
+			productName = LoggingKit;
+		};
+		3E05C64B27B3ED7D00623058 /* LoggingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E05C64827B3ED6F00623058 /* XCRemoteSwiftPackageReference "logging" */;
+			productName = LoggingKit;
+		};
 		3E241BBC27AD42AF0088E1C3 /* APODKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APODKit;
+		};
+		3E2F51EB27B40389001263F5 /* APODAppClip */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APODAppClip;
+		};
+		3E3B7A1F27B3FEDC00D6C842 /* APODAppClip */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APODAppClip;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

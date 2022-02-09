@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "LoggingKit",
+        "repositoryURL": "https://github.com/mikelrob/logging",
+        "state": {
+          "branch": null,
+          "revision": "dd0b216cb1e62b681c69ac65109a7e8860b6d8df",
+          "version": "0.1.0"
+        }
+      },
+      {
         "package": "Moya",
         "repositoryURL": "https://github.com/Moya/Moya",
         "state": {

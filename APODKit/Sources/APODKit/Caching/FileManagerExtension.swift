@@ -2,6 +2,7 @@ import Foundation
 
 public protocol FileManagerType {
     var applicationSupportDirectoryURL: URL { get }
+    var sharedContainerURL: URL { get }
 
     func createDirectory(at url: URL, withIntermediateDirectories createIntermediates: Bool, attributes: [FileAttributeKey: Any]?) throws
     func changeCurrentDirectoryPath(_ path: String) -> Bool
@@ -22,6 +23,9 @@ extension FileManager: FileManagerType {
     }
     public var applicationSupportDirectoryURL: URL {
         return urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+    }
+    public var sharedContainerURL: URL {
+        return containerURL(forSecurityApplicationGroupIdentifier: "group.me.mikerobinson.apod")!
     }
     // swiftlint:enable force_unwrapping
 }

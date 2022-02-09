@@ -2,10 +2,11 @@ import Foundation
 import Combine
 import APODKit
 import CoreImage
+import LoggingKit
 
-class APODModel: ObservableObject {
+public class APODModel: ObservableObject {
 
-    typealias Dependencies = HasFileManagerType & HasCacheType & HasNetworkClientType
+    public typealias Dependencies = HasFileManagerType & HasCacheType & HasNetworkClientType
 
     private let store: APODStore
 
@@ -14,7 +15,7 @@ class APODModel: ObservableObject {
 
     var cancellables = Set<AnyCancellable>()
 
-    init(dependencies: Dependencies) {
+    public init(dependencies: Dependencies) {
 
         store = APODStore(dependencies: dependencies)
 
@@ -32,7 +33,7 @@ class APODModel: ObservableObject {
                     self.apodItem = item.mapToViewItem()
                 }
             } catch {
-                print(error)
+                Log.error(error)
             }
         }
     }

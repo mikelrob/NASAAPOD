@@ -1,13 +1,14 @@
 import SwiftUI
 import Combine
 import APODKit
-import AVKit
 
-struct ContentView: View {
+public struct ContentView: View {
 
     @EnvironmentObject var model: APODModel
 
-    var body: some View {
+    public init() {}
+    
+    public var body: some View {
         ScrollView {
             APODInfoView(apodInfo: model.apodItem)
                 .redacted(reason: model.apodItem == nil ? .placeholder : [] )

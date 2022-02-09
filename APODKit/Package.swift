@@ -17,12 +17,15 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-argument-parser", branch: "async"),
         .package(url: "https://github.com/Quick/Quick", from: "4.0.0"),
         .package(url: "https://github.com/Quick/Nimble", from: "9.0.0"),
+        .package(url: "https://github.com/mikelrob/logging", from: "0.1.0"),
 
     ],
     targets: [
         .target(
             name: "APODKit",
-            dependencies: ["Moya"]),
+            dependencies: [
+                "Moya",
+                .product(name: "LoggingKit", package: "logging")]),
         .testTarget(
             name: "APODKitTests",
             dependencies: [
