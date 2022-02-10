@@ -17,8 +17,8 @@
 		3E10196D27AC59D20056E2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E10196C27AC59D20056E2BA /* Assets.xcassets */; };
 		3E10197027AC59D20056E2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E10196F27AC59D20056E2BA /* Preview Assets.xcassets */; };
 		3E241BBD27AD42AF0088E1C3 /* APODKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E241BBC27AD42AF0088E1C3 /* APODKit */; };
-		3E2F51EC27B40389001263F5 /* APODAppClip in Frameworks */ = {isa = PBXBuildFile; productRef = 3E2F51EB27B40389001263F5 /* APODAppClip */; };
 		3E3B7A2027B3FEDC00D6C842 /* APODAppClip in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3B7A1F27B3FEDC00D6C842 /* APODAppClip */; };
+		3EC47F8027B57ADB00A9B010 /* APODApp in Frameworks */ = {isa = PBXBuildFile; productRef = 3EC47F7F27B57ADB00A9B010 /* APODApp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC47F8027B57ADB00A9B010 /* APODApp in Frameworks */,
 				3E241BBD27AD42AF0088E1C3 /* APODKit in Frameworks */,
-				3E2F51EC27B40389001263F5 /* APODAppClip in Frameworks */,
 				3E05C64A27B3ED6F00623058 /* LoggingKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,7 +207,7 @@
 			packageProductDependencies = (
 				3E241BBC27AD42AF0088E1C3 /* APODKit */,
 				3E05C64927B3ED6F00623058 /* LoggingKit */,
-				3E2F51EB27B40389001263F5 /* APODAppClip */,
+				3EC47F7F27B57ADB00A9B010 /* APODApp */,
 			);
 			productName = APOD;
 			productReference = 3E10196527AC59D10056E2BA /* APOD.app */;
@@ -604,13 +604,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = APODKit;
 		};
-		3E2F51EB27B40389001263F5 /* APODAppClip */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = APODAppClip;
-		};
 		3E3B7A1F27B3FEDC00D6C842 /* APODAppClip */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APODAppClip;
+		};
+		3EC47F7F27B57ADB00A9B010 /* APODApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APODApp;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

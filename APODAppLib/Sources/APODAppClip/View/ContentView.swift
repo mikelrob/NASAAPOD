@@ -11,7 +11,7 @@ public struct ContentView: View {
     public var body: some View {
         ScrollView {
             APODInfoView(apodInfo: model.apodItem)
-                .redacted(reason: model.apodItem == nil ? .placeholder : [] )
+                .redacted(reason: model.apodItem == .placeholder ? .placeholder : [] )
         }
         .toolbar {
             ToolbarItem(placement: .bottomBar) {

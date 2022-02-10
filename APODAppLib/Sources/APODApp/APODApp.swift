@@ -1,6 +1,8 @@
 import APODAppClip
 
-public class AppControler: AppClipController {
+public class AppController: AppClipController {
 
     public override init() { }
 }
+
+public typealias ContentView = APODAppClip.ContentView

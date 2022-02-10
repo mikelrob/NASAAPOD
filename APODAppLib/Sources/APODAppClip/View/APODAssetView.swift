@@ -1,6 +1,6 @@
 import SwiftUI
 
-public enum APODAssetViewItem {
+public enum APODAssetViewItem: Equatable {
     case video(URL)
     case image(CGImage)
     case loading

@@ -2,7 +2,7 @@ import Foundation
 import APODKit
 import LoggingKit
 
-public class AppClipController {
+open class AppClipController {
 
     private let dependencies: DependencyInjectionContainer
 

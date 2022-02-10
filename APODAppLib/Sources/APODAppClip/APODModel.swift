@@ -11,7 +11,7 @@ public class APODModel: ObservableObject {
     private let store: APODStore
 
     @Published var date = Date()
-    @Published var apodItem: APODViewItem?
+    @Published var apodItem: APODViewItem = .placeholder
 
     var cancellables = Set<AnyCancellable>()
 
