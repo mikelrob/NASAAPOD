@@ -26,6 +26,7 @@ public class APODModel: ObservableObject {
     }
 
     func fetch(date: Date) {
+        apodItem = .loading
         Task {
             do {
                 let item = try await store.apod(for: date)
@@ -36,6 +37,17 @@ public class APODModel: ObservableObject {
                 Log.error(error)
             }
         }
+    }
+
+    func selectPreviousDay() {
+        guard let previousDay = Calendar.current.date(byAdding: .day, value: -1, to: date) else { return }
+        date = previousDay
+    }
+
+    func selectNextDay() {
+        guard let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: date),
+              nextDay <= Date() else { return }
+        date = nextDay
     }
 }
 

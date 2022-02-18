@@ -22,6 +22,9 @@ struct APODAssetView: View {
                 .aspectRatio(contentMode: .fit)
         case .loading:
             ProgressView()
+                .padding(50)
+                .frame(maxWidth: .infinity,
+                       alignment: .center)
         case .placeholder:
             Image("NASALogo")
                 .resizable()
