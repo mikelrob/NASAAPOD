@@ -52,7 +52,8 @@ public class Cache: CacheType {
         switch apodItem.asset {
 
         case let .video(url):
-            return APODItem(title: apodItem.title,
+            return APODItem(date: apodItem.date,
+                            title: apodItem.title,
                             asset: APODItem.APODAsset.video(url),
                             explanation: apodItem.explanation)
 
@@ -62,7 +63,8 @@ public class Cache: CacheType {
                fileManager.fileExists(atPath: localURL.lastPathComponent),
                fileManager.isReadableFile(atPath: localURL.lastPathComponent) {
                 // item is up to date and available
-                return APODItem(title: apodItem.title,
+                return APODItem(date: apodItem.date,
+                                title: apodItem.title,
                                 asset: APODItem.APODAsset.image(localURL),
                                 explanation: apodItem.explanation)
             } else {
@@ -94,7 +96,8 @@ public class Cache: CacheType {
                 self.storage[newItem.date] = newItem
                 self.persistStorage()
 
-                return APODItem(title: newItem.title,
+                return APODItem(date: apodItem.date,
+                                title: newItem.title,
                                 asset: APODItem.APODAsset.image(localURL),
                                 explanation: newItem.explanation)
             }

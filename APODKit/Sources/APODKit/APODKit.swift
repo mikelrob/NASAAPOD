@@ -24,6 +24,7 @@ public struct APODItem {
         }
     }
 
+    public let date: String
     public let title: String
     public let asset: APODAsset
     public let explanation: String
@@ -57,6 +58,25 @@ public class APODStore {
             return apodItem
         }
     }
+
+    public func randomApods(count: Int = 1 ) async throws -> [APODItem] {
+
+        let randomApodResponse = try await network.randomApods(count: count)
+        let randomStoredApods: [APODStorageItem] = randomApodResponse.compactMap { item in
+            guard let dateString = item.date,
+                  let dateString = ISO8601DateFormatter.fullYearWithDashFormatter.date(from: dateString)
+            else { return nil }
+
+            return item.mapToAPODStorageItem(fetchedDate: dateString)
+        }
+
+        var arrayOfApods: [APODItem] = []
+        for storedApod in randomStoredApods {
+            let apodItem = try await localCache.save(apodStorageItem: storedApod)
+            arrayOfApods.append(apodItem)
+        }
+        return arrayOfApods
+    }
 }
 
 private extension APODResponse {
@@ -75,4 +95,10 @@ private extension APODResponse {
                                explanation: self.explanation,
                                asset: asset)
     }
+
+//    func mapToAPODItem() -> APODItem {
+//        APODItem(title: self.title,
+//                 asset: APODItem.APODAsset.,
+//                 explanation: self.explanation)
+//    }
 }

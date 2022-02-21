@@ -1,9 +1,15 @@
 import SwiftUI
 
 struct APODViewItem {
+    let date: String
     var title: String
     var asset: APODAssetViewItem
     var explanation: String
+}
+
+extension APODViewItem: Identifiable {
+
+    var id: String { title }
 }
 
 struct APODInfoView: View {

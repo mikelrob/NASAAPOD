@@ -58,7 +58,8 @@ extension APODItem.APODAsset {
 
 extension APODItem {
     func mapToViewItem() -> APODViewItem {
-        APODViewItem(title: self.title,
+        APODViewItem(date: self.date,
+                     title: self.title,
                      asset: asset.mapToViewAsset(),
                      explanation: self.explanation)
     }

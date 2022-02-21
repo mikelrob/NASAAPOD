@@ -3,6 +3,7 @@ import Moya
 
 public protocol NASANetworkClientType {
     func apod(for date: Date) async throws -> APODResponse
+    func randomApods(count: Int) async throws -> [APODResponse]
 }
 
 public protocol HasNetworkClientType {
@@ -17,6 +18,12 @@ class NASANetworkClient: NASANetworkClientType {
         return try await moyaProvider.request(.apod(date: date))
             .filterSuccessfulStatusCodes()
             .map(APODResponse.self, using: JSONDecoder.apodDecoder)
+    }
+
+    func randomApods(count: Int) async throws -> [APODResponse] {
+        return try await moyaProvider.request(.randomApods(count: count))
+            .filterSuccessfulStatusCodes()
+            .map([APODResponse].self, using: JSONDecoder.apodDecoder)
     }
 }
 
