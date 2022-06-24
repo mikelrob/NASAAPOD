@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "Moya", url: "https://github.com/Moya/Moya", from: "15.0.0"),
-        .package(url: "https://github.com/apple/swift-argument-parser", branch: "async"),
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.1.0"),
         .package(url: "https://github.com/Quick/Quick", from: "4.0.0"),
         .package(url: "https://github.com/Quick/Nimble", from: "9.0.0"),
 
