@@ -1,0 +1,94 @@
+disabled_rules:
+  - file_length
+  - function_body_length
+  - large_tuple
+  - line_length
+  - nesting
+  - type_body_length
+
+opt_in_rules:
+ - empty_count
+ - first_where
+ - overridden_super_call
+ - syntactic_sugar
+ - force_unwrapping
+
+excluded:
+  - ./*/Package.swift
+  - Tests                   # Ignore Swift files under "Tests/"
+  - ./*/.build
+
+closure_parameter_position:
+  severity: error
+
+colon:
+  apply_to_dictionaries: false
+  severity: error
+
+identifier_name:
+  min_length:
+    error: 2
+  max_length: # warning and error
+    warning: 60
+    error: 70
+
+  excluded: # names to ignore
+    - id
+    - ID
+    - to
+    - URL
+    - me
+    - tz
+    - on
+
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 50
+    error: 60
+
+control_statement:
+  severity: error
+
+empty_enum_arguments:
+  severity: error
+
+first_where:
+  severity: error
+
+for_where:
+  severity: error
+
+legacy_constructor:
+  severity: error
+
+operator_whitespace:
+  severity: error
+
+overridden_super_call:
+   severity: error
+
+redundant_string_enum_value:
+  severity: error
+
+statement_position:
+  severity: error
+
+syntactic_sugar:
+  severity: error
+
+trailing_comma:
+  mandatory_comma: false
+  severity: error
+
+unused_optional_binding:
+  severity: error
+
+vertical_parameter_alignment:
+  severity: error
+
+force_unwrapping:
+    severity: error
+
+weak_delegate:
+  severity: error
